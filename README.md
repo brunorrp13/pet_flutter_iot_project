@@ -29,7 +29,8 @@ A feature-rich Flutter app simulating an IoT-enabled pet monitoring and interact
 
 ## 📱 Screenshots
 
-<img src="screenshots/home_page.png" width="300" /> <img src="screenshots/pet_interaction.png" width="300" />
+<img width="822" height="1754" alt="image" src="https://github.com/user-attachments/assets/021c87b5-b818-4256-8c62-4671ace752ce" />
+<img width="808" height="1758" alt="image" src="https://github.com/user-attachments/assets/76ff3221-8e57-4683-a398-5ee5a479a4af" />
 
 ---
 
