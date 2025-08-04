@@ -1,17 +1,61 @@
-# flutter_iot_pet_app_
+# 🐾 Flutter IoT Pet App
 
-A new Flutter project.
+A feature-rich Flutter app simulating an IoT-enabled pet monitoring and interaction experience. Built with Riverpod, WebSockets, GraphQL, Bluetooth, and device sensors, this app is a great starting point for building real-time, interactive Flutter + IoT applications.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📦 Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🐶 **Pet Status Monitoring**
+  - Name, status, and profile image (randomized from Dog CEO API)
+- 📍 **Live IoT Device Data**
+  - Battery level (via simulated Bluetooth device)
+  - Heart rate and temperature (streamed in real-time)
+  - GPS location using `geolocator`
+  - Firmware version simulation
+- 🔊 **Voice Command Simulation**
+  - "Feed" command with state transitions
+- 📡 **MQTT Sync Simulation**
+  - Manual connect/disconnect with status indicator
+- ☁️ **Cloud Sync Simulation**
+- 💬 **WebSocket Communication**
+  - Send/receive real-time messages
+- 🌐 **GraphQL Country List**
+  - Fetches countries and capitals using the `countries.trevorblades.com` API
+- 🧪 **Modular and Testable Architecture**
+  - Riverpod-powered, clean separation of concerns (Repository, UseCase, Providers, Widgets)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# pet_flutter_iot_project
+## 📱 Screenshots
+
+<img src="screenshots/home_page.png" width="300" /> <img src="screenshots/pet_interaction.png" width="300" />
+
+---
+
+## 🔧 Tech Stack
+
+| Area              | Package / Technology                          |
+|-------------------|-----------------------------------------------|
+| **State Mgmt**    | [Riverpod](https://riverpod.dev/)             |
+| **Bluetooth**     | [flutter_blue_plus](https://pub.dev/packages/flutter_blue_plus) |
+| **GraphQL**       | [graphql_flutter](https://pub.dev/packages/graphql_flutter) |
+| **WebSocket**     | [web_socket_channel](https://pub.dev/packages/web_socket_channel) |
+| **Permissions**   | [permission_handler](https://pub.dev/packages/permission_handler) |
+| **Location**      | [geolocator](https://pub.dev/packages/geolocator) |
+| **UI**            | Material Design, Responsive Layouts           |
+
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+
+- Flutter 3.10+
+- Dart 3.x
+- Android/iOS emulator or real device with Bluetooth
+
+### 2. Install Dependencies
+
+```bash
+flutter pub get
