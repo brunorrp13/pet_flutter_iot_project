@@ -52,9 +52,8 @@ A feature-rich Flutter app simulating an IoT-enabled pet monitoring and interact
 ### 2. Install Dependencies
 
 ```bash
-flutter pub get```
-
----
+flutter pub get
+```markdown
 
 ### 3. 📱 Screenshots
 
