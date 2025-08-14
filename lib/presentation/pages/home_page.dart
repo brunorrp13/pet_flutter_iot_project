@@ -38,7 +38,7 @@ class HomePage extends ConsumerWidget {
     final wsService = ref.watch(webSocketServiceProvider);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Random Dog')),
+      appBar: AppBar(title: const Text('Pet IoT App')),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
