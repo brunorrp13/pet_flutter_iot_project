@@ -41,14 +41,6 @@ A feature-rich Flutter app simulating an IoT-enabled pet monitoring and interact
 
 ---
 
-
-
-### 📱 Screenshots
-
-<img width="822" height="1754" alt="image" src="https://github.com/user-attachments/assets/021c87b5-b818-4256-8c62-4671ace752ce" />
-<img width="808" height="1758" alt="image" src="https://github.com/user-attachments/assets/76ff3221-8e57-4683-a398-5ee5a479a4af" />
-
-
 ## 🚀 Getting Started
 
 ### 1. Prerequisites
@@ -62,4 +54,8 @@ A feature-rich Flutter app simulating an IoT-enabled pet monitoring and interact
 ```bash
 flutter pub get
 
----
+### 3. 📱 Screenshots
+
+<img width="364" height="822" alt="image" src="https://github.com/user-attachments/assets/acffc3ea-7adf-40bf-9c39-7c748ea1fb6a" />
+
+<img width="384" height="816" alt="image" src="https://github.com/user-attachments/assets/f13edfc0-ab5c-4bcf-81dc-043a347a2fe2" />
