@@ -24,7 +24,8 @@ if (flutterVersionName == null) {
 
 android {
     namespace "com.example.flutter_iot_pet_app_"
-    compileSdkVersion flutter.compileSdkVersion
+    compileSdk 36
+    compileSdkVersion 36
     ndkVersion flutter.ndkVersion
 
     compileOptions {

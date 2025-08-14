@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:math';
 
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
 import 'package:flutter_iot_pet_app/data/websockets/websocket_service.dart';
@@ -334,8 +335,11 @@ final messageControllerProvider = Provider<TextEditingController>((ref) {
   return controller;
 });
 
+/// A [GraphQLClientProvider] that consults a http public link to get data with queries.
+///
+/// Can be called directly.
 @riverpod
-GraphQLClient graphQLClient(GraphQLClientRef ref) {
+GraphQLClient graphQLClient(Ref ref) {
   final httpLink = HttpLink('https://countries.trevorblades.com/');
 
   return GraphQLClient(
@@ -345,7 +349,7 @@ GraphQLClient graphQLClient(GraphQLClientRef ref) {
 }
 
 @riverpod
-Future<List<Map<String, dynamic>>> countries(CountriesRef ref) async {
+Future<List<Map<String, dynamic>>> countries(Ref ref) async {
   final client = ref.watch(graphQLClientProvider);
 
   const query = r'''

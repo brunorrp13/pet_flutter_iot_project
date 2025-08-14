@@ -19,6 +19,8 @@ final httpClientProvider = AutoDisposeProvider<http.Client>.internal(
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef HttpClientRef = AutoDisposeProviderRef<http.Client>;
 String _$petRepositoryHash() => r'263acddd6b82188eb7edb8cd152549464e88404c';
 
@@ -41,6 +43,8 @@ final petRepositoryProvider = AutoDisposeProvider<PetRepositoryImpl>.internal(
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef PetRepositoryRef = AutoDisposeProviderRef<PetRepositoryImpl>;
 String _$getPetStatusUsecaseHash() =>
     r'c19c0f4754442b7f26a0d5785809c7bbcdd901e3';
@@ -64,6 +68,8 @@ final getPetStatusUsecaseProvider =
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef GetPetStatusUsecaseRef = AutoDisposeProviderRef<GetPetStatusUsecase>;
 String _$petLocationHash() => r'130d8de99326a64a61639b2e11b28badb4c387a1';
 
@@ -81,6 +87,8 @@ final petLocationProvider = AutoDisposeFutureProvider<String>.internal(
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef PetLocationRef = AutoDisposeFutureProviderRef<String>;
 String _$petTemperatureHash() => r'a5e4a5d20ede295f70d6ceaba2a833b0455db26b';
 
@@ -100,6 +108,8 @@ final petTemperatureProvider = AutoDisposeStreamProvider<double>.internal(
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef PetTemperatureRef = AutoDisposeStreamProviderRef<double>;
 String _$petHeartRateHash() => r'8dc872fafe51dea84c2c76a3f4d349114f5bbc03';
 
@@ -118,8 +128,10 @@ final petHeartRateProvider = AutoDisposeStreamProvider<int>.internal(
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef PetHeartRateRef = AutoDisposeStreamProviderRef<int>;
-String _$petDeviceBatteryHash() => r'8e91cdd131c31aa4c0ff79a2242a36d1407e0a31';
+String _$petDeviceBatteryHash() => r'c4a10292c223c4b42c41484fb95c0fcf7b404537';
 
 /// A [StreamProvider] that gets IoT battery level for a device.
 ///
@@ -136,6 +148,8 @@ final petDeviceBatteryProvider = AutoDisposeStreamProvider<int>.internal(
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef PetDeviceBatteryRef = AutoDisposeStreamProviderRef<int>;
 String _$firmwareVersionHash() => r'bad0ca161673d3a77b34e6ea31088e70a7cfd373';
 
@@ -153,10 +167,16 @@ final firmwareVersionProvider = AutoDisposeFutureProvider<String>.internal(
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef FirmwareVersionRef = AutoDisposeFutureProviderRef<String>;
-String _$graphQLClientHash() => r'121c9222a4fc247d8f6ecb598e4fe45bbbc78829';
+String _$graphQLClientHash() => r'e6ec68745c5c402a6c83f68466777d2d191a6e42';
 
-/// See also [graphQLClient].
+/// A [GraphQLClientProvider] that consults a http public link to get data with queries.
+///
+/// Can be called directly.
+///
+/// Copied from [graphQLClient].
 @ProviderFor(graphQLClient)
 final graphQLClientProvider = AutoDisposeProvider<GraphQLClient>.internal(
   graphQLClient,
@@ -168,8 +188,10 @@ final graphQLClientProvider = AutoDisposeProvider<GraphQLClient>.internal(
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef GraphQLClientRef = AutoDisposeProviderRef<GraphQLClient>;
-String _$countriesHash() => r'e545c1698a4c91aad3fc07e51acb5524ed83e174';
+String _$countriesHash() => r'dcbdb428e791cd3d2855ceab668281b65ef1fbd0';
 
 /// See also [countries].
 @ProviderFor(countries)
@@ -183,6 +205,8 @@ final countriesProvider =
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef CountriesRef = AutoDisposeFutureProviderRef<List<Map<String, dynamic>>>;
 String _$petStatusHash() => r'9c63e876b507f15ab8a2ea0f6a3f4815f0628ee8';
 
@@ -318,4 +342,4 @@ final syncStatusProvider =
 
 typedef _$SyncStatus = AutoDisposeNotifier<String>;
 // ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package
