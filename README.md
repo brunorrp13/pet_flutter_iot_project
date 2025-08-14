@@ -53,8 +53,7 @@ A feature-rich Flutter app simulating an IoT-enabled pet monitoring and interact
 
 ```bash
 flutter pub get
-```markdown
-
+```
 ### 3. 📱 Screenshots
 
 <img width="364" height="822" alt="image" src="https://github.com/user-attachments/assets/acffc3ea-7adf-40bf-9c39-7c748ea1fb6a" />
